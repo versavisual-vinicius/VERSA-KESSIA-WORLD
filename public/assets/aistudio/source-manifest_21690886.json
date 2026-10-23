@@ -1,0 +1,109 @@
+[
+  {
+    "id": "night",
+    "source": "acampamento_sob_a_lua_cheia.png",
+    "sourcePath": "/mnt/data/acampamento_sob_a_lua_cheia.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "03c83bf441fe622f13fa3aee3d684b33e509cd70c6aa22759bd4f0cd225eaaf4",
+    "atmosphere": "lua cheia",
+    "fxCandidate": [
+      "stars",
+      "moonGlow",
+      "fire",
+      "fireflies"
+    ],
+    "status": "reference_only_not_extracted"
+  },
+  {
+    "id": "rain",
+    "source": "chuva_no_acampamento_da_floresta.png",
+    "sourcePath": "/mnt/data/chuva_no_acampamento_da_floresta.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "b0aae0cd870513240278d6eddb5babe10f2d458eed26a6f7ed3a6be3e05543c3",
+    "atmosphere": "chuva",
+    "fxCandidate": [
+      "rain",
+      "ripples",
+      "splashes",
+      "wetSheen"
+    ],
+    "status": "reference_only_not_extracted"
+  },
+  {
+    "id": "snow",
+    "source": "acampamento_nevado_na_floresta.png",
+    "sourcePath": "/mnt/data/acampamento_nevado_na_floresta.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "c8a7c853ee7b5199b55db6510f805b28efb95f3ce4073310fa517689760e83b4",
+    "atmosphere": "neve",
+    "fxCandidate": [
+      "snowfall",
+      "snowDrift",
+      "breath"
+    ],
+    "status": "reference_only_not_extracted"
+  },
+  {
+    "id": "day_golden",
+    "source": "acampamento_encantado_na_floresta_dourada.png",
+    "sourcePath": "/mnt/data/acampamento_encantado_na_floresta_dourada.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "9a792141015d56cc6309a02b1766bba81cc4394e246a52c509400908518e0040",
+    "atmosphere": "dia dourado",
+    "fxCandidate": [
+      "sunRays",
+      "dust",
+      "fire"
+    ],
+    "status": "reference_only_not_extracted"
+  },
+  {
+    "id": "sunset",
+    "source": "golden_hour_forest_camp_adventure.png",
+    "sourcePath": "/mnt/data/golden_hour_forest_camp_adventure.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "15bd7e850424b99db59d11856aeb034a40b6994658b4f52fd396b801739f7de2",
+    "atmosphere": "pôr do sol",
+    "fxCandidate": [
+      "sunRays",
+      "bloom",
+      "dust"
+    ],
+    "status": "reference_only_not_extracted"
+  },
+  {
+    "id": "day_forest",
+    "source": "trilha_encantada_no_acampamento_da_floresta.png",
+    "sourcePath": "/mnt/data/trilha_encantada_no_acampamento_da_floresta.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "339b8222c4658b82f79800a04a1018b981d81520573f43188e679a66d6c1fd8d",
+    "atmosphere": "dia floresta",
+    "fxCandidate": [
+      "waterFlow",
+      "fire",
+      "leafParticles"
+    ],
+    "status": "reference_only_not_extracted"
+  },
+  {
+    "id": "mist",
+    "source": "acampamento_nebuloso_ao_amanhecer.png",
+    "sourcePath": "/mnt/data/acampamento_nebuloso_ao_amanhecer.png",
+    "width": 941,
+    "height": 1672,
+    "sha256": "0af71bebda275ab306303851dc2e8dc6af1cb3faedd6e516c9029de2eef24daa",
+    "atmosphere": "amanhecer com neblina",
+    "fxCandidate": [
+      "fogNear",
+      "fogFar",
+      "sunRays"
+    ],
+    "status": "reference_only_not_extracted"
+  }
+]

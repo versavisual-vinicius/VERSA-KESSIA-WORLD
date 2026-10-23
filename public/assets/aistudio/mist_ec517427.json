@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "sceneId": "mist",
+  "source": {
+    "filename": "acampamento_nebuloso_ao_amanhecer.png",
+    "sha256": "0af71bebda275ab306303851dc2e8dc6af1cb3faedd6e516c9029de2eef24daa",
+    "dimensions": {
+      "width": 941,
+      "height": 1672
+    }
+  },
+  "world": {
+    "width": 941,
+    "height": 1672,
+    "coordinateSystem": "top-left-pixels",
+    "projection": "illustrated-2.5d",
+    "walkableSpace": "image-plane"
+  },
+  "render": {
+    "layers": [],
+    "sortPolicy": "fixedGroupsThenFootY",
+    "camera": {
+      "mode": "follow",
+      "safeArea": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      }
+    }
+  },
+  "objects": [],
+  "spawns": [],
+  "navigation": {
+    "walkablePolygons": [],
+    "blockedPolygons": [],
+    "links": []
+  },
+  "occluders": [],
+  "effects": [],
+  "audit": {
+    "sourceVerified": true,
+    "extractionVerified": false,
+    "collisionsVerified": false,
+    "visualParityVerified": false,
+    "notes": [
+      "Template: no extracted asset or coordinate has been validated."
+    ]
+  }
+}

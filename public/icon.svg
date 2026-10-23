@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#13251b" />
+      <stop offset="100%" stop-color="#070e0a" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <rect x="28" y="28" width="456" height="456" rx="92" fill="none" stroke="#2d4c3b" stroke-width="8" />
+  <!-- Pine Trees -->
+  <polygon points="256,76 160,220 352,220" fill="#15803d" />
+  <polygon points="256,128 140,296 372,296" fill="#166534" />
+  <rect x="236" y="296" width="40" height="56" rx="6" fill="#5c3a21" />
+  <!-- Golden Trail & Lantern Glow -->
+  <circle cx="256" cy="212" r="54" fill="url(#gold)" />
+  <text x="256" y="232" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="60" fill="#140e05">+×</text>
+  <!-- Title Badge -->
+  <rect x="86" y="368" width="340" height="72" rx="22" fill="#1a2e22" stroke="#f59e0b" stroke-width="5" />
+  <text x="256" y="415" text-anchor="middle" font-family="serif" font-weight="800" font-size="38" fill="#fef3c7" letter-spacing="2">KÉSSIA 2.5D</text>
+</svg>

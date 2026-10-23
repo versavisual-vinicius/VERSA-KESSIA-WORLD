@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Forest 2.5D scene v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sceneId",
+    "source",
+    "world",
+    "render",
+    "objects",
+    "spawns",
+    "navigation",
+    "occluders",
+    "effects",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "sceneId": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "filename",
+        "sha256",
+        "dimensions"
+      ],
+      "properties": {
+        "filename": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "dimensions": {
+          "$ref": "#/$defs/dimensions"
+        }
+      }
+    },
+    "world": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "coordinateSystem",
+        "projection",
+        "walkableSpace"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "coordinateSystem": {
+          "const": "top-left-pixels"
+        },
+        "projection": {
+          "const": "illustrated-2.5d"
+        },
+        "walkableSpace": {
+          "const": "image-plane"
+        }
+      }
+    },
+    "render": {
+      "type": "object",
+      "required": [
+        "layers",
+        "sortPolicy",
+        "camera"
+      ],
+      "properties": {
+        "layers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/layer"
+          }
+        },
+        "sortPolicy": {
+          "const": "fixedGroupsThenFootY"
+        },
+        "camera": {
+          "type": "object"
+        }
+      }
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/object"
+      }
+    },
+    "spawns": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pointNamed"
+      }
+    },
+    "navigation": {
+      "type": "object",
+      "required": [
+        "walkablePolygons",
+        "blockedPolygons",
+        "links"
+      ],
+      "properties": {
+        "walkablePolygons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/polygon"
+          }
+        },
+        "blockedPolygons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/polygon"
+          }
+        },
+        "links": {
+          "type": "array"
+        }
+      }
+    },
+    "occluders": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/object"
+      }
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "enabled"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "maskAsset": {
+            "type": "string"
+          },
+          "params": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "required": [
+        "sourceVerified",
+        "extractionVerified",
+        "collisionsVerified",
+        "visualParityVerified",
+        "notes"
+      ],
+      "properties": {
+        "sourceVerified": {
+          "type": "boolean"
+        },
+        "extractionVerified": {
+          "type": "boolean"
+        },
+        "collisionsVerified": {
+          "type": "boolean"
+        },
+        "visualParityVerified": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dimensions": {
+      "type": "object",
+      "required": [
+        "width",
+        "height"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "pointNamed": {
+      "type": "object",
+      "required": [
+        "id",
+        "x",
+        "y"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      }
+    },
+    "polygon": {
+      "type": "object",
+      "required": [
+        "id",
+        "points"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "points": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "layer": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "asset",
+        "z",
+        "parallax"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "string"
+        },
+        "z": {
+          "type": "number"
+        },
+        "parallax": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "object": {
+      "type": "object",
+      "required": [
+        "id",
+        "asset",
+        "x",
+        "y",
+        "anchor",
+        "depthGroup",
+        "collision"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "asset": {
+          "type": "string"
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "anchor": {
+          "enum": [
+            "bottom-center",
+            "top-left",
+            "center"
+          ]
+        },
+        "depthGroup": {
+          "enum": [
+            "behind-player",
+            "dynamic-y",
+            "front-of-player"
+          ]
+        },
+        "collision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "interactive": {
+          "type": "boolean"
+        },
+        "interactionId": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

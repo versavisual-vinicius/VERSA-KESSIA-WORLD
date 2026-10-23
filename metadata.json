@@ -1,0 +1,6 @@
+{
+  "name": "Trilha da Floresta — Game 2.5D",
+  "description": "Jogo de aventura e exploração 2.5D na floresta com 7 cenários climáticos, ordenação dinâmica por profundidade (footY), travessia de ponte, iluminação atmosférica e contrato JSON v1.0.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

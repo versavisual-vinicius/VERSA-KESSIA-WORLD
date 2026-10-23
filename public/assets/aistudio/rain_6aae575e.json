@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "sceneId": "rain",
+  "source": {
+    "filename": "chuva_no_acampamento_da_floresta.png",
+    "sha256": "b0aae0cd870513240278d6eddb5babe10f2d458eed26a6f7ed3a6be3e05543c3",
+    "dimensions": {
+      "width": 941,
+      "height": 1672
+    }
+  },
+  "world": {
+    "width": 941,
+    "height": 1672,
+    "coordinateSystem": "top-left-pixels",
+    "projection": "illustrated-2.5d",
+    "walkableSpace": "image-plane"
+  },
+  "render": {
+    "layers": [],
+    "sortPolicy": "fixedGroupsThenFootY",
+    "camera": {
+      "mode": "follow",
+      "safeArea": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      }
+    }
+  },
+  "objects": [],
+  "spawns": [],
+  "navigation": {
+    "walkablePolygons": [],
+    "blockedPolygons": [],
+    "links": []
+  },
+  "occluders": [],
+  "effects": [],
+  "audit": {
+    "sourceVerified": true,
+    "extractionVerified": false,
+    "collisionsVerified": false,
+    "visualParityVerified": false,
+    "notes": [
+      "Template: no extracted asset or coordinate has been validated."
+    ]
+  }
+}

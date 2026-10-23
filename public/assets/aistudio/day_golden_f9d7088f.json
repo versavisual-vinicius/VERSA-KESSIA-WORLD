@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "sceneId": "day_golden",
+  "source": {
+    "filename": "acampamento_encantado_na_floresta_dourada.png",
+    "sha256": "9a792141015d56cc6309a02b1766bba81cc4394e246a52c509400908518e0040",
+    "dimensions": {
+      "width": 941,
+      "height": 1672
+    }
+  },
+  "world": {
+    "width": 941,
+    "height": 1672,
+    "coordinateSystem": "top-left-pixels",
+    "projection": "illustrated-2.5d",
+    "walkableSpace": "image-plane"
+  },
+  "render": {
+    "layers": [],
+    "sortPolicy": "fixedGroupsThenFootY",
+    "camera": {
+      "mode": "follow",
+      "safeArea": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      }
+    }
+  },
+  "objects": [],
+  "spawns": [],
+  "navigation": {
+    "walkablePolygons": [],
+    "blockedPolygons": [],
+    "links": []
+  },
+  "occluders": [],
+  "effects": [],
+  "audit": {
+    "sourceVerified": true,
+    "extractionVerified": false,
+    "collisionsVerified": false,
+    "visualParityVerified": false,
+    "notes": [
+      "Template: no extracted asset or coordinate has been validated."
+    ]
+  }
+}
